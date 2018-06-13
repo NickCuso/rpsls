@@ -1,0 +1,77 @@
+<!-- The icons in this app were acquired from the Noun Project:
+
+Fist icon designed by Till Teenck
+Rock icon designed by John Maravelakis
+Paper icon designed by Dmitry Baranovskiy
+Scissors icon designed by Lorena Salagre
+Lizard icon designed by Ben Markoch
+Vulcan salute icon designed by Till Teenck -->
+<!doctype html>
+<html>
+<head>    
+    <meta charset=utf-8>
+    <title>Rock Paper Scissors Lizard Spock</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+    <script src="static/settings.js"></script>
+    <script src="js/Global.js"></script>
+    <script src="js/nebulas.js"></script>
+    <script src="js/nebPay.js"></script>
+    <script src="js/HardlyNeb.js"></script>
+    <script src="js/Template.js" defer="true"></script> 
+    <script src="js/Index.js" defer="true"></script> 
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="container mt-3">
+        
+        <div class="row text-center mt-5">
+            <div class="col">
+                <a href="new.html">Start a New Game</a>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mt-3" id="your-games">
+            <div class="col-12 text-center">
+                <h5>Your Games In Progress</h5>
+                <div class="col" id="your-games-contents">Loading...</div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 text-center">
+                <h5>Join a Game</h5>
+                <div class="col" id="join-game-contents">Loading...</div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col">
+                <ul>
+                    <li>Scissors cuts Paper</li>
+                    <li>Paper covers Rock</li>
+                    <li>Rock crushes Lizard</li>
+                    <li>Lizard poisons Spock</li>
+                    <li>Spock smashes Scissors</li>
+                    <li>Scissors decapitates Lizard</li>
+                    <li>Lizard eats Paper</li>
+                    <li>Paper disproves Spock</li>
+                    <li>Spock vaporizes Rock</li>
+                    <li>Rock breaks Scissors</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+        
+    </div>
+  
+</body>
+</html>
