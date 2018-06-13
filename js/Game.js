@@ -43,7 +43,7 @@ function getGame()
                 game = resp;
                 $("#player-0-addr").text(formatAddress(game.players[0].addr));
                 $("#player-1-addr").text(formatAddress(game.players[1].addr));
-                $("#game-over").show();
+                $("#game-over").attr('style', "display:inline-block");
                 interval = setInterval(aoeu, 500);
             }
             else if(resp.your_player_id == 0)
@@ -121,6 +121,12 @@ function aoeu()
         $("#game-over-message").text(titleCase(winning_selection)
             + " " + hit_message + " " 
             + titleCase(titleCase(losing_selection)));
+
+
+        if(game.winner >= 0)
+        {
+            $("#player-" + otherPlayer(game.winner) + "-x").show();        
+        }
         clearInterval(interval);
     }
 }

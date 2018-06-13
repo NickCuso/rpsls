@@ -38,25 +38,30 @@
         </div>
     </div>
 
-    <div id="game-over" class="hidden">
-        <div class="row mt-5 justify-content-center">
-            <h2>Game Over</h2>
-        </div>
-        <div class="row mt-5 justify-content-center">
-            <!-- TODO -->
-            <h5 id="game-over-message">Rock...</h5> 
-        </div>
-        <div class="row mt-5 text-center">
-            <div class="col">
-                <img id="player-0" src="images/start.svg" class="selectable-icon animation-target" />  
-                <div class="player-addr" id="player-0-addr"></div>
+    <div class="justify-content-center text-center">
+        <div id="game-over" class="hidden">
+            <div class="row mt-5 justify-content-center">
+                <h2>Game Over</h2>
             </div>
-            <div class="col">
-                <img id="player-1" src="images/start.svg" class="selectable-icon animation-target" />  
-                <div class="player-addr" id="player-1-addr"></div>
+            <div class="row mt-5 justify-content-center">
+                <!-- TODO -->
+                <h5 id="game-over-message">Rock...</h5> 
+            </div>
+            <div class="row mt-5 text-center">
+                <div class="col">
+                    <img src="images/red-x.svg" class="red-x hidden" id="player-0-x" />
+                    <img id="player-0" src="images/start.svg" class="selectable-icon animation-target" />  
+                    <div class="player-addr" id="player-0-addr"></div>
+                </div>
+                <div class="col">
+                    <img src="images/red-x.svg" class="red-x hidden" id="player-1-x" />
+                    <img id="player-1" src="images/start.svg" class="selectable-icon animation-target" />  
+                    <div class="player-addr" id="player-1-addr"></div>
+                </div>
             </div>
         </div>
     </div>
+
 
     <div class="hidden text-center" id="reveal">
         <h5>Complete Game</h5>
